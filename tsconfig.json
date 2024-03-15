@@ -1,0 +1,33 @@
+{
+	"compilerOptions": {
+		// Type Checking
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+
+		// Modules
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"resolveJsonModule": true,
+		"allowImportingTsExtensions": true,
+		"paths": {
+			"@/*": ["./src/*"]
+		},
+
+		// Emit
+		"noEmit": true,
+
+		// Interop Constraints
+		"esModuleInterop": true,
+		"isolatedModules": true,
+		"forceConsistentCasingInFileNames": true,
+
+		// Language and Environment
+		"target": "ES2021",
+		"lib": ["ES2021"],
+		"useDefineForClassFields": true,
+
+		// Completeness
+		"skipLibCheck": true
+	},
+	"include": ["src", "tsup.config.ts", "scripts"]
+}

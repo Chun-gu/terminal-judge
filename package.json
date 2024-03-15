@@ -1,0 +1,61 @@
+{
+	"name": "terminal-judge",
+	"version": "0.0.1",
+	"author": "Chun-gu",
+	"description": "An online judge, inside your terminal.",
+	"license": "MIT",
+	"keywords": [
+		"cli",
+		"terminal",
+		"online judge",
+		"problem solving"
+	],
+	"homepage": "https://github.com/Chun-gu/terminal-judge",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Chun-gu/terminal-judge.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Chun-gu/terminal-judge/issues"
+	},
+	"type": "module",
+	"main": "dist/index.js",
+	"bin": {
+		"tj": "dist/index.js"
+	},
+	"files": [
+		"dist"
+	],
+	"engines": {
+		"node": ">=20",
+		"pnpm": ">=8"
+	},
+	"scripts": {
+		"tj": "node dist/index.js",
+		"tsx": "tsx",
+		"dev": "tsup --watch",
+		"build": "pnpm check && tsup",
+		"upload": "pnpm build && pnpm publish",
+		"check": "pnpm /^check:.*/",
+		"check:type": "tsc",
+		"check:lint": "eslint . --ext ts --cache --report-unused-disable-directives --max-warnings 0",
+		"check:format": "prettier . --write --cache"
+	},
+	"dependencies": {
+		"htmlparser2": "^9.1.0"
+	},
+	"devDependencies": {
+		"@stylistic/eslint-plugin": "^1.7.0",
+		"@types/node": "^20.11.27",
+		"@typescript-eslint/eslint-plugin": "^7.2.0",
+		"@typescript-eslint/parser": "^7.2.0",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-import-resolver-typescript": "^3.6.1",
+		"eslint-plugin-import": "^2.29.1",
+		"prettier": "^3.2.5",
+		"tsup": "^8.0.2",
+		"tsx": "^4.7.1",
+		"typescript": "^5.4.2"
+	}
+}

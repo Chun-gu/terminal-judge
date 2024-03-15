@@ -1,0 +1,21 @@
+{
+	"printWidth": 80,
+	"useTabs": true,
+	"tabWidth": 2,
+	"singleQuote": false,
+	"quoteProps": "as-needed",
+	"trailingComma": "all",
+	"arrowParens": "always",
+	"bracketSpacing": true,
+	"experimentalTernaries": true,
+	"semi": true,
+	"endOfLine": "lf",
+	"proseWrap": "preserve",
+	"embeddedLanguageFormatting": "auto",
+	"overrides": [
+		{
+			"files": "**/*.yml",
+			"options": { "useTabs": false }
+		}
+	]
+}
