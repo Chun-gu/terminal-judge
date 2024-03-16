@@ -42,6 +42,7 @@
 		"check:format": "prettier . --write --cache"
 	},
 	"dependencies": {
+		"commander": "^12.0.0",
 		"htmlparser2": "^9.1.0"
 	},
 	"devDependencies": {
