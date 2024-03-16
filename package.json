@@ -42,6 +42,7 @@
 		"check:format": "prettier . --write --cache"
 	},
 	"dependencies": {
+		"@inquirer/prompts": "^4.3.0",
 		"commander": "^12.0.0",
 		"htmlparser2": "^9.1.0"
 	},
