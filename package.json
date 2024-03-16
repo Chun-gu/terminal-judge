@@ -38,7 +38,7 @@
 		"upload": "pnpm build && pnpm publish",
 		"check": "pnpm /^check:.*/",
 		"check:type": "tsc",
-		"check:lint": "eslint . --ext ts --cache --report-unused-disable-directives --max-warnings 0",
+		"check:lint": "eslint . --ext .ts --cache --report-unused-disable-directives --max-warnings 0",
 		"check:format": "prettier . --write --cache"
 	},
 	"dependencies": {
