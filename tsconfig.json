@@ -7,7 +7,6 @@
 		// Modules
 		"module": "ESNext",
 		"moduleResolution": "Bundler",
-		"resolveJsonModule": true,
 		"allowImportingTsExtensions": true,
 		"paths": {
 			"@/*": ["./src/*"]
@@ -29,5 +28,5 @@
 		// Completeness
 		"skipLibCheck": true
 	},
-	"include": ["src", "tsup.config.ts", "scripts"]
+	"include": ["src", "tsup.config.ts"]
 }

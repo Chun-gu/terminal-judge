@@ -1,2 +1,3 @@
-export { openProblemPage as open } from "./open";
-export { addProblem as add } from "./add";
+export { add } from "./add";
+export { init } from "./init";
+export { open } from "./open";

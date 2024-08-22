@@ -1,11 +1,9 @@
 #!/usr/bin/env node
 
-import { add, open } from "@/commands";
+import { Command } from "commander";
 
-const [command, problemId] = process.argv.slice(2);
+import { add, init } from "@/commands";
 
-if (command === "open") {
-	open(Number(problemId));
-} else if (command === "add") {
-	add(Number(problemId));
-}
+const program = new Command();
+
+program.addCommand(init).addCommand(add).parse();

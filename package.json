@@ -44,7 +44,9 @@
 	"dependencies": {
 		"@inquirer/prompts": "^4.3.0",
 		"commander": "^12.0.0",
-		"htmlparser2": "^9.1.0"
+		"conf": "^12.0.0",
+		"htmlparser2": "^9.1.0",
+		"node-html-parser": "^6.1.12"
 	},
 	"devDependencies": {
 		"@stylistic/eslint-plugin": "^1.7.0",
